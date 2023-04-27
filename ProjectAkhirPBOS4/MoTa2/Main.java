@@ -270,17 +270,12 @@ public class Main {
                     buatHero(listHero, atkHero);
                     cls.cls();
                 } else if(select == 2){
-                    try{
+                    
+                    lihatHero(listHero, atkHero);
                     bermain Bermain = new bermain();
                     cls.cls();
                     Bermain.action(listHero, atkHero);
-                    } catch (NullPointerException e){
-                        System.out.println("Objek kosong! Silakan buat hero terlebih dahulu.");
-                        cls.cls();
-                    } catch (Exception e){
-                        System.out.println("Terjadi kesalahan saat memulai game. Silakan coba lagi.");
-                        cls.cls();
-                    }
+
                 } else if(select == 3){
                     lihatHero(listHero, atkHero);
                     cls.cls();
